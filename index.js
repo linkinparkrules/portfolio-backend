@@ -9,7 +9,7 @@ const port = process.env.PORT;
 
 app.use(express.json());
 
-const whitelist = ["http://localhost:3000", "https://portfolio-zeta-puce-29.vercel.app/", "http://localhost:5001"];
+const whitelist = ["http://localhost:3000", "https://portfolio-zeta-puce-29.vercel.app", "http://localhost:5001"];
 const corsOptions = {
     origin: function (origin, callback) {
       if (whitelist.indexOf(origin) !== -1) {
